@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cut">
+  <title>خريطة الرياض البرية</title>
+  <meta name="description" content="خريطة تفاعلية لمواقع البر حول الرياض: جبال، أودية، آبار، نفود، مواقع أثرية وطرق صحراوية.">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="map" aria-label="الخريطة"></div>
+
+  <aside id="panel" class="panel" data-state="peek">
+    <button class="sheet-handle" id="sheetHandle" aria-label="توسيع القائمة"><span></span></button>
+
+    <div class="search-row">
+      <div class="search-box">
+        <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M15.5 14h-.79l-.28-.27A6.47 6.47 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+        <input id="search" type="search" autocomplete="off" spellcheck="false"
+               data-i18n-placeholder="searchPlaceholder" placeholder="ابحث عن جبل، وادي، بئر، نفود…">
+        <button id="clearSearch" class="icon-btn" hidden aria-label="مسح"><svg viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg></button>
+      </div>
+      <button id="langToggle" class="lang-btn" aria-label="Language">EN</button>
+    </div>
+
+    <div class="chips" id="chips" role="group"></div>
+
+    <div class="toolbar">
+      <span id="resultCount" class="count"></span>
+      <div class="toolbar-actions">
+        <label class="toggle" title="">
+          <input type="checkbox" id="inView">
+          <span data-i18n="inView">في نطاق الخريطة</span>
+        </label>
+        <select id="sort" aria-label="ترتيب">
+          <option value="relevance" data-i18n="sortRelevance">الأقرب للبحث</option>
+          <option value="distance" data-i18n="sortDistance">الأقرب للمركز</option>
+          <option value="name" data-i18n="sortName">أبجدي</option>
+        </select>
+      </div>
+    </div>
+
+    <div id="detail" class="detail" hidden></div>
+
+    <ul id="list" class="list" role="listbox"></ul>
+    <div id="empty" class="empty" hidden data-i18n="empty">لا توجد نتائج. جرّب كلمة أخرى أو فعّل تصنيفات أكثر.</div>
+
+    <footer class="panel-foot">
+      <span data-i18n="sourceLabel">المصدر:</span>
+      <a id="sourceLink" target="_blank" rel="noopener" data-i18n="sourceName">خريطة الرياض البرية (Google My Maps)</a>
+    </footer>
+  </aside>
+
+  <div class="map-controls">
+    <div class="zoom-group">
+      <button id="zoomIn" class="fab" aria-label="تكبير" data-i18n-title="zoomIn" title="تكبير"><svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg></button>
+      <button id="zoomOut" class="fab" aria-label="تصغير" data-i18n-title="zoomOut" title="تصغير"><svg viewBox="0 0 24 24"><path d="M19 13H5v-2h14v2z"/></svg></button>
+    </div>
+    <button id="locate" class="fab" aria-label="موقعي" data-i18n-title="myLocation" title="موقعي">
+      <svg viewBox="0 0 24 24"><path d="M12 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8zm8.94 3A8.994 8.994 0 0 0 13 3.06V1h-2v2.06A8.994 8.994 0 0 0 3.06 11H1v2h2.06A8.994 8.994 0 0 0 11 20.94V23h2v-2.06A8.994 8.994 0 0 0 20.94 13H23v-2h-2.06zM12 19c-3.87 0-7-3.13-7-7s3.13-7 7-7 7 3.13 7 7-3.13 7-7 7z"/></svg>
+    </button>
+    <div class="layer-picker">
+      <button id="layerBtn" class="fab" aria-label="طبقات" data-i18n-title="layers" title="طبقات">
+        <svg viewBox="0 0 24 24"><path d="m11.99 18.54-7.37-5.73L3 14.07l9 7 9-7-1.63-1.27-7.38 5.74zM12 16l7.36-5.73L21 9l-9-7-9 7 1.63 1.27L12 16z"/></svg>
+      </button>
+      <div id="layerMenu" class="layer-menu" hidden>
+        <div class="layer-title" data-i18n="basemap">الخريطة الأساسية</div>
+        <div class="basemaps" id="basemaps"></div>
+        <div class="layer-title" data-i18n="overlays">طبقات إضافية</div>
+        <label class="check"><input type="checkbox" id="showLabels"> <span data-i18n="labelsLayer">أسماء المواقع على الخريطة</span></label>
+      </div>
+    </div>
+  </div>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <div id="loading" class="loading"><div class="spinner"></div><span data-i18n="loading">جارٍ تحميل المواقع…</span></div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
