@@ -277,6 +277,8 @@ button, input, select { font: inherit; color: inherit; }
   border: 2px solid #fff; box-shadow: 0 0 0 1px rgba(0,0,0,.25), 0 1px 3px rgba(0,0,0,.35);
 }
 .pin-heritage { width: 20px; height: 20px; border-radius: 50%; display: grid; place-items: center; border: 2px solid #fff; box-shadow: 0 1px 3px rgba(0,0,0,.4); }
+.pin-sabil { width: 22px; height: 22px; border-radius: 50%; display: grid; place-items: center; border: 2px solid #fff; box-shadow: 0 1px 3px rgba(0,0,0,.45); }
+.pin-sabil svg { width: 12px; height: 12px; fill: #fff; }
 .pin-heritage svg { width: 12px; height: 12px; fill: #fff; }
 .pin-selected { filter: drop-shadow(0 2px 3px rgba(0,0,0,.4)); }
 .pin-selected svg { width: 36px; height: 48px; display: block; }

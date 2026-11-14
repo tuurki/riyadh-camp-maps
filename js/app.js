@@ -8,7 +8,7 @@
     ar: {
       dir: 'rtl', other: 'EN',
       title: 'خريطة الرياض البرية',
-      searchPlaceholder: 'ابحث عن جبل، وادي، روضة، محمية، مدينة…',
+      searchPlaceholder: 'ابحث عن ماء سبيل، روضة، جبل، محمية، مدينة…',
       all: 'الكل', inView: 'في نطاق الخريطة',
       sortRelevance: 'الأقرب للبحث', sortDistance: 'الأقرب', sortName: 'أبجدي',
       results: n => `${fmtNum(n)} موقع`,
@@ -39,6 +39,8 @@
       website: 'الموقع الرسمي', sources: 'المصادر', checkOfficial: d => `جُمعت هذه المعلومات من مصادر رسمية وعامة بتاريخ ${d}. الأنظمة تتغير، فتأكد من الجهة الرسمية قبل الزيارة.`,
       secondary: 'مصدر غير رسمي', noInfo: 'لم نجد معلومات منشورة.',
       pointOnly: 'حدود المحمية غير متوفرة، يظهر موقعها فقط.',
+      sabilName: 'ماء سبيل', sabilAdded: d => `أُضيف إلى القائمة في ${d}`, sabilSource: 'من قائمة «مارد ماء» العامة على Google Maps',
+      sabilNote: 'نقاط ماء يضيفها متطوعون. تأكد من توفر الماء قبل الاعتماد عليه، واحمل احتياطك دائماً.',
       noLocation: 'لم نتمكن من التحقق من موقع هذه المحمية من مصدر مفتوح، لذلك لا تظهر على الخريطة.',
       // weather
       weather: 'الطقس', wxLoading: 'جارٍ جلب الطقس…', wxError: 'تعذّر جلب الطقس الآن. حاول لاحقاً.',
@@ -69,7 +71,7 @@
     en: {
       dir: 'ltr', other: 'ع',
       title: 'Riyadh Wild Map',
-      searchPlaceholder: 'Search valleys, rawdas, reserves, cities…',
+      searchPlaceholder: 'Search water points, rawdas, reserves, cities…',
       all: 'All', inView: 'In map view',
       sortRelevance: 'Best match', sortDistance: 'Nearest', sortName: 'A–Z',
       results: n => `${n.toLocaleString('en')} places`,
@@ -100,6 +102,8 @@
       website: 'Official website', sources: 'Sources', checkOfficial: d => `Collected from official and public sources on ${d}. Rules change, so confirm with the official authority before you visit.`,
       secondary: 'non-official source', noInfo: 'No published information found.',
       pointOnly: 'The reserve boundary is not available; only its location is shown.',
+      sabilName: 'Free water (sabil)', sabilAdded: d => `Added to the list on ${d}`, sabilSource: 'From the public Google Maps list “مارد ماء”',
+      sabilNote: 'Water points added by volunteers. Confirm the water is available before relying on it, and always carry a reserve.',
       noLocation: 'We could not verify this reserve’s location from an open source, so it is not shown on the map.',
       weather: 'Weather', wxLoading: 'Loading weather…', wxError: 'Could not load the weather right now. Try again later.',
       feels: v => `Feels like ${v}`, humidity: v => `Humidity ${v}`, wind: (v, dir) => `Wind ${v} km/h ${dir}`,
@@ -153,6 +157,7 @@
     provinces: 'M20.5 3l-.16.03L15 5.1 9 3 3.36 4.9c-.21.07-.36.25-.36.48V20.5c0 .28.22.5.5.5l.16-.03L9 18.9l6 2.1 5.64-1.9c.21-.07.36-.25.36-.48V3.5c0-.28-.22-.5-.5-.5zM15 19l-6-2.11V5l6 2.11V19z',
     reserves: 'M17 8C8 10 5.9 16.17 3.82 21.34l1.89.66.95-2.3c.48.17.98.3 1.34.3C19 20 22 3 22 3c-1 2-8 2.25-13 3.25S2 11.5 2 13.5s1.75 3.75 1.75 3.75C7 8 17 8 17 8z',
     coords: 'M12 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8zm8.94 3A8.994 8.994 0 0 0 13 3.06V1h-2v2.06A8.994 8.994 0 0 0 3.06 11H1v2h2.06A8.994 8.994 0 0 0 11 20.94V23h2v-2.06A8.994 8.994 0 0 0 20.94 13H23v-2h-2.06zM12 19c-3.87 0-7-3.13-7-7s3.13-7 7-7 7 3.13 7 7-3.13 7-7 7z',
+    sabil: 'M3 2l2.01 18.23C5.13 21.23 5.97 22 7 22h10c1.03 0 1.87-.77 1.99-1.77L21 2H3zm9 17c-1.66 0-3-1.34-3-3 0-2 3-5.4 3-5.4s3 3.4 3 5.4c0 1.66-1.34 3-3 3zm6.33-11H5.67l-.44-4h13.53l-.43 4z',
     me: 'M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z',
   };
   const svg = (path, cls = '') => `<svg viewBox="0 0 24 24" class="${cls}" aria-hidden="true"><path d="${path}"/></svg>`;
@@ -299,12 +304,15 @@
   let provinces = [];      // province items
   let reserves = [];       // reserve items
   let reserveInfo = null;  // reserves.json (general rules, date)
+  let sabilSource = null;  // Google Maps list URL
+  let FIRST_EXTRA = 0;     // index of the first category not from the Google My Maps export
   let results = [];
   let rendered = 0;
   const PAGE = 60;
 
   // Categories that are not part of the Google My Maps export.
   const EXTRA_CATS = [
+    { key: 'sabil', ar: 'ماء سبيل', en: 'Free water', color: '#0891B2' },
     { key: 'reserves', ar: 'المحميات', en: 'Nature reserves', color: '#3F7D20' },
     { key: 'cities', ar: 'المدن الرئيسية', en: 'Major cities', color: '#1F2937' },
     { key: 'provinces', ar: 'المناطق الإدارية', en: 'Regions', color: '#C2410C' },
@@ -381,7 +389,9 @@
   function pointIcon(cat) {
     if (iconCache[cat.key]) return iconCache[cat.key];
     let icon;
-    if (cat.key === 'heritage') {
+    if (cat.key === 'sabil') {
+      icon = L.divIcon({ className: '', iconSize: [22, 22], html: `<div class="pin-sabil" style="background:${cat.color}">${svg(ICONS.sabil)}</div>` });
+    } else if (cat.key === 'heritage') {
       icon = L.divIcon({ className: '', iconSize: [20, 20], html: `<div class="pin-heritage" style="background:${cat.color}">${svg(ICONS.heritage)}</div>` });
     } else {
       icon = L.divIcon({ className: '', iconSize: [14, 14], html: `<div class="pin-dot" style="background:${cat.color}"></div>` });
@@ -423,10 +433,11 @@
   }
 
   async function load() {
-    const [places, lines, regions, res] = await Promise.all([
+    const [places, lines, regions, res, sabil] = await Promise.all([
       fetchJSON('data/places.json'), fetchJSON('data/lines.json'),
-      fetchJSON('data/regions.json', true), fetchJSON('data/reserves.json', true),
+      fetchJSON('data/regions.json', true), fetchJSON('data/reserves.json', true), fetchJSON('data/sabil.json', true),
     ]);
+    FIRST_EXTRA = places.meta.categories.length;
     CATS = [...places.meta.categories, ...EXTRA_CATS];
     CATS.forEach((c, i) => { c.i = i; CAT[c.key] = c; });
     els.source.href = places.meta.source;
@@ -489,6 +500,7 @@
 
     if (regions) loadRegions(regions);
     if (res) loadReserves(res);
+    if (sabil) loadSabil(sabil);
   }
 
   function loadRegions(data) {
@@ -519,6 +531,21 @@
         lat: c.lat, lng: c.lng, latlng: [c.lat, c.lng], marker, layers: [marker], near: '', desc: '', boost: 4 - c.rank,
       });
       marker.on('click', () => select(it, { fly: false }));
+    });
+  }
+
+  function loadSabil(data) {
+    sabilSource = data.source;
+    const sc = CAT.sabil;
+    data.points.forEach(([name, note, lat, lng, near, nearKm, added], i) => {
+      const it = addItem({
+        id: 's' + i, type: 'point', ci: sc.i, cat: sc, name: name || I18N.ar.sabilName, alt: 'ماء سبيل مارد ماء sabil water',
+        nameEn: name ? null : I18N.en.sabilName, generic: !name,
+        lat, lng, latlng: [lat, lng], near, nearKm, desc: note, added,
+      });
+      it.marker = L.marker([lat, lng], { icon: pointIcon(sc), title: it.name, keyboard: false, zIndexOffset: 300 });
+      it.marker.on('click', () => select(it, { fly: false }));
+      it.marker.bindTooltip(esc(it.name), { direction: 'top', offset: [0, -10], className: 'tip' });
     });
   }
 
@@ -631,7 +658,7 @@
     }
     const byName = (a, b) => (a.name || '￿').localeCompare(b.name || '￿', 'ar');
     // Without a query, show reserves, cities and regions first, then the map's own categories.
-    const order = it => (it.ci >= CAT.reserves.i ? it.ci - 100 : it.ci);
+    const order = it => (it.ci >= FIRST_EXTRA ? it.ci - 100 : it.ci);
     if (state.sort === 'distance') results.sort((a, b) => a._dist - b._dist);
     else if (state.sort === 'name') results.sort(byName);
     else if (state.query.trim()) results.sort((a, b) => b._score - a._score || a._dist - b._dist);
@@ -682,31 +709,34 @@
   function renderChips(counts) {
     const allOn = state.cats.size === CATS.length;
     const fmt = n => (lang === 'ar' ? fmtNum(n) : n.toLocaleString('en'));
-    const order = [...CATS.slice(CAT.reserves.i), ...CATS.slice(0, CAT.reserves.i)];
+    const order = [...CATS.slice(FIRST_EXTRA), ...CATS.slice(0, FIRST_EXTRA)];
     let html = `<button class="chip all" data-ci="all" aria-pressed="${allOn}">${esc(t('all'))}</button>`;
     order.forEach(c => {
-      const extra = c.i >= CAT.reserves.i ? ' extra' : '';
+      const extra = c.i >= FIRST_EXTRA ? ' extra' : '';
       html += `<button class="chip${extra}" data-ci="${c.i}" aria-pressed="${state.cats.has(c.i)}">
         <span class="dot" style="background:${c.color}"></span>${esc(c[lang])} <span class="n">${fmt(counts[c.i])}</span></button>`;
     });
     els.chips.innerHTML = html;
   }
   function saveCats() { store.set('catKeys', CATS.filter(c => state.cats.has(c.i)).map(c => c.key)); }
+  // A second click on the same chip within 400 ms ("double-click") shows only that category.
+  let lastChip = null, lastChipAt = 0;
   els.chips.addEventListener('click', e => {
     const b = e.target.closest('.chip'); if (!b) return;
+    const now = Date.now();
+    if (b.dataset.ci !== 'all' && lastChip === b.dataset.ci && now - lastChipAt < 400) {
+      lastChip = null;
+      state.cats = new Set([+b.dataset.ci]);
+      saveCats(); refresh();
+      return;
+    }
+    lastChip = b.dataset.ci; lastChipAt = now;
     if (b.dataset.ci === 'all') {
       state.cats = state.cats.size === CATS.length ? new Set() : new Set(CATS.map(c => c.i));
     } else {
       const i = +b.dataset.ci;
       state.cats.has(i) ? state.cats.delete(i) : state.cats.add(i);
     }
-    saveCats();
-    refresh();
-  });
-  // Double-click a chip to show only that category.
-  els.chips.addEventListener('dblclick', e => {
-    const b = e.target.closest('.chip'); if (!b || b.dataset.ci === 'all') return;
-    state.cats = new Set([+b.dataset.ci]);
     saveCats();
     refresh();
   });
@@ -939,6 +969,11 @@
     }
     const ctx = contextFacts(it);
     facts.push(...ctx.facts);
+    if (it.cat.key === 'sabil') {
+      if (it.added) facts.push(fact(UI_ICONS.doc, esc(t('sabilAdded', lang === 'ar' ? fmtNum(it.added) : it.added))));
+      if (sabilSource) facts.push(fact(UI_ICONS.link, `<a href="${esc(sabilSource)}" target="_blank" rel="noopener">${esc(t('sabilSource'))}</a>`));
+      ctx.banner += `<div class="notice">${svg(UI_ICONS.warn)}<p>${esc(t('sabilNote'))}</p></div>`;
+    }
 
     const sub = it.kind === 'reserve' ? (it.info.type === 'royal' ? t('royalReserve') : t('ncwReserve')) : it.cat[lang];
     const showActions = it.kind !== 'province' && !it.noLoc;
