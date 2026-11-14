@@ -1,0 +1,1360 @@
+{
+  "generated": "2026-11-14",
+  "method_note": "Research done via web search excerpts only. Direct fetching of ncw.gov.sa, ksrnr.gov.sa, karrda.gov.sa, saudipedia.com, wikipedia etc. was blocked by this environment's network allowlist, so every page was read through search-engine excerpts. Rules may lag the live sites; verify before publishing.",
+  "royal_reserve_count_note": "8 royal reserves: King Abdulaziz, King Salman, Imam Turki bin Abdullah, Imam Abdulaziz bin Mohammed, King Khalid, Imam Saud bin Abdulaziz, Prince Mohammed bin Salman, Imam Faisal bin Turki (8th, Oct 2023). Separately, the Imam Abdulrahman bin Faisal reserve (4,310 km2, Dirma/Muzahimiyah, Riyadh) was approved by the Council of Ministers under the Royal Commission for Riyadh City; no source confirmed it as a 'royal reserve', so it is not included here.",
+  "general_rules": {
+    "ar": [
+      "الصيد: موسم الصيد المستدام 2026-2027 من 1 سبتمبر 2026 حتى 31 يناير 2027، ويقتصر على الأنواع المعتمدة (30 نوعاً) بتصريح عبر منصة فطري التابعة للمركز الوطني لتنمية الحياة الفطرية، ويشمل ذلك حاملي البنادق الهوائية المرخصة والصقارين المسجلين في نادي الصقور السعودي.",
+      "يُمنع الصيد داخل المناطق المحمية، وداخل حدود المدن والقرى والمزارع، وقرب المنشآت العسكرية والحيوية، وفي المشاريع الكبرى (نيوم، القدية، البحر الأحمر)، وفي شريط ساحلي بعمق 20 كم، ويُمنع صيد الأنواع المهددة بالانقراض بشكل دائم، كما تُمنع بنادق الشوزن والشباك والمنادي.",
+      "التخييم في أراضي الغطاء النباتي والمتنزهات الوطنية والغابات يتطلب تصريحاً من المركز الوطني لتنمية الغطاء النباتي عبر منصة نباتي (nabati.ncvc.gov.sa)، ويصدر فوراً؛ وبدأ موسم 2025 في 17 أكتوبر 2025.",
+      "ضوابط التخييم (المركز الوطني لتنمية الغطاء النباتي): مدة لا تتجاوز 3 أشهر، ومخيم واحد لكل مستفيد، ومساحة لا تتجاوز 2000 م²، وإيقاف المركبات داخل المخيم، والابتعاد 100 م على الأقل عن الطرق السريعة وخطوط الضغط العالي والمرافق العامة، ويُمنع تأجير المخيم.",
+      "يُمنع استخدام الحطب والفحم المحليين، ولا تُشعل النار إلا في الأماكن المخصصة، ويُمنع القيادة خارج المسارات المخصصة، ويجب ترك المكان نظيفاً.",
+      "التخييم في المناطق المحمية التابعة للمركز الوطني لتنمية الحياة الفطرية يتم بحجز المواقع واستخراج التصاريح عبر منصة فطري.",
+      "العقوبات المعلنة من القوات الخاصة للأمن البيئي (حسب ما نُقل في الأخبار): قطع الأشجار أو اقتلاعها أو نقلها دون ترخيص حتى 20,000 ريال للشجرة؛ نقل الحطب أو الفحم المحليين أو بيعهما حتى 16,000 ريال للمتر المكعب؛ التخييم دون ترخيص في الغابات أو المتنزهات الوطنية أو المحميات حتى 3,000 ريال؛ إشعال النار في غير الأماكن المخصصة حتى 3,000 ريال؛ دخول المحميات دون تصريح 5,000 ريال؛ الصيد دون ترخيص 10,000 ريال؛ الصيد في الأماكن المحظورة 5,000 ريال.",
+      "يُبلَّغ عن المخالفات البيئية على الرقم 911 في مناطق مكة المكرمة والمدينة المنورة والرياض والشرقية، وعلى 999 و996 في بقية المناطق."
+    ],
+    "en": [
+      "Hunting: the 2026-27 sustainable hunting season runs 1 Sep 2026 to 31 Jan 2027, limited to approved species (30) with a permit via NCW's Fitri platform, including licensed air/gas rifle holders and falconers registered with the Saudi Falcons Club.",
+      "Hunting is banned inside protected areas, within city, village and farm limits, near military and vital facilities, in giga-projects (NEOM, Qiddiya, Red Sea) and within a 20 km coastal strip. Threatened species are permanently protected, and shotguns, nets and callers/lures are banned.",
+      "Camping on vegetation-cover lands, national parks and forests needs an NCVC permit via the Nabati platform (nabati.ncvc.gov.sa), issued instantly. The 2025 season opened 17 Oct 2025.",
+      "NCVC camping rules: max 3 months, one camp per person, max 2,000 m2, vehicles parked inside the camp, at least 100 m from highways, high-voltage lines and public utilities, and no renting out the camp.",
+      "No local firewood or charcoal, fires only in designated places, no driving off designated tracks, leave the site clean.",
+      "Camping in NCW protected areas: reserve the site and get the permit via the Fitri platform.",
+      "Penalties announced by the Special Forces for Environmental Security (as reported in news): cutting, uprooting or transporting trees without a licence up to SAR 20,000 per tree; transporting or selling local firewood/charcoal up to SAR 16,000 per m3; unlicensed camping in forests, national parks or reserves up to SAR 3,000; fire in an undesignated place up to SAR 3,000; entering a reserve without a permit SAR 5,000; hunting without a licence SAR 10,000; hunting in prohibited places SAR 5,000.",
+      "Report environmental violations: 911 (Makkah, Madinah, Riyadh, Eastern Province), 999/996 elsewhere."
+    ],
+    "platforms": [
+      {
+        "name_en": "Fitri (NCW)",
+        "name_ar": "فطري",
+        "use": "hunting permits, NCW protected-area camping and visit licences",
+        "url": null,
+        "note": "Official URL not confirmed in search results; reach it via ncw.gov.sa. SPA reports a relaunch of Fitri as a national wildlife data platform on 12 Oct 2026."
+      },
+      {
+        "name_en": "Nabati (NCVC)",
+        "name_ar": "نباتي",
+        "use": "camping permits on vegetation-cover lands, national parks and forests; grazing e-permits",
+        "url": "https://nabati.ncvc.gov.sa/ncvc/?id=ncvc_home"
+      },
+      {
+        "name_en": "NCVC camping permit service page",
+        "url": "https://ncvc.gov.sa/en/EServices/Pages/Service02.aspx"
+      }
+    ],
+    "sources": [
+      "https://www.spa.gov.sa/en/N2665972",
+      "https://www.spa.gov.sa/en/N2388753",
+      "https://www.spa.gov.sa/en/N2502250",
+      "https://www.spa.gov.sa/en/N2456002",
+      "https://www.spa.gov.sa/en/N2699550",
+      "https://www.spa.gov.sa/en/N2422760",
+      "https://ncvc.gov.sa/en/EServices/Pages/Service02.aspx",
+      "https://ncvc.gov.sa/en/Pages/CampingCaravanGuide2025.aspx",
+      "https://ncvc.gov.sa/en/digitalKnowledge/Camping/Pages/default.aspx",
+      "https://ncvc.gov.sa/en/digitalKnowledge/Violation/Pages/default.aspx",
+      "https://spa.gov.sa/en/N2362883",
+      "https://ajel.sa/local/bbb5qcdvkc",
+      "https://www.mewa.gov.sa/en/InformationCenter/DocsCenter/RulesLibrary/Docs/Executive Regulation for the Protected Areas.pdf",
+      "https://saudigazette.com.sa/article/615527",
+      "https://saudigazette.com.sa/article/637388",
+      "https://www.spa.gov.sa/w1906597",
+      "https://www.spa.gov.sa/N2388058",
+      "https://www.okaz.com.sa/local/saudi-arabia/2237560",
+      "https://slaati.com/2026/01/13/p2720938.html",
+      "https://www.arabnews.com/saudi-arabia/saudi-arabia-cracks-down-on-environmental-violators-2595835"
+    ],
+    "notes": [
+      "The tree/firewood fine amounts come from SFES statements quoted in news. An older statement gives SAR 10,000-50,000 per ton for firewood trading, which conflicts with the per-m3 figure.",
+      "The NCVC penalty table lists unlicensed camping in forests/national parks from SAR 500 for a first offence; news reports say 'up to SAR 3,000'. Both may be true (escalating scale), but this is unconfirmed.",
+      "NCVC Wild Camps Regulatory Rules were approved 30 Sep 2025 and published in Umm al-Qura.",
+      "A draft amendment to the Protected Areas Executive Regulation (Oct 2025) would require prior licensing to enter protected areas; its final status is unknown."
+    ]
+  },
+  "absorbed_former_protected_areas": [
+    {
+      "name_en": "Harrat al-Harrah",
+      "name_ar": "حرة الحرة",
+      "now_part_of": "king-salman-royal-reserve"
+    },
+    {
+      "name_en": "Al-Tubayq",
+      "name_ar": "الطبيق",
+      "now_part_of": "king-salman-royal-reserve"
+    },
+    {
+      "name_en": "Al-Khunfah",
+      "name_ar": "الخنفة",
+      "now_part_of": "king-salman-royal-reserve"
+    },
+    {
+      "name_en": "At-Taysiyah",
+      "name_ar": "التيسية",
+      "now_part_of": "imam-turki-bin-abdullah-royal-reserve"
+    },
+    {
+      "name_en": "Mahazat as-Sayd",
+      "name_ar": "محازة الصيد",
+      "now_part_of": "imam-saud-bin-abdulaziz-royal-reserve"
+    },
+    {
+      "name_en": "Rawdat Khuraim",
+      "name_ar": "روضة خريم",
+      "now_part_of": "imam-abdulaziz-bin-mohammed-royal-reserve"
+    },
+    {
+      "name_en": "Rawdat al-Tinhat / Rawdat al-Khafs",
+      "name_ar": "روضة التنهات / روضة الخفس",
+      "now_part_of": "king-abdulaziz-royal-reserve"
+    },
+    {
+      "name_en": "Thumamah National Park",
+      "name_ar": "متنزه الثمامة",
+      "now_part_of": "king-khalid-royal-reserve"
+    }
+  ],
+  "reserves": [
+    {
+      "key": "king-abdulaziz-royal-reserve",
+      "name_ar": "محمية الملك عبدالعزيز الملكية",
+      "name_en": "King Abdulaziz Royal Reserve",
+      "type": "royal",
+      "region": [
+        "Riyadh",
+        "Eastern Province"
+      ],
+      "center": [
+        26.0,
+        47.2
+      ],
+      "area_km2": 28000,
+      "includes_former": [
+        "Rawdat al-Tinhat (روضة التنهات)",
+        "Rawdat al-Khafs (روضة الخفس)",
+        "Rawdat Nourah (روضة نورة)",
+        "parts of Al-Summan plateau (الصمان)",
+        "parts of Al-Dahna desert (الدهناء)"
+      ],
+      "website": "https://karrda.gov.sa/",
+      "allowed": {
+        "ar": [
+          "التنزه اليومي من 6 صباحاً حتى 6 مساءً في الصمان والدهناء بتصريح مسبق",
+          "التنزه خارج هذه الأوقات بتصريح خاص يتضمن إحداثيات الموقع",
+          "التخييم في المواقع التي تحددها الهيئة بعد الحصول على تصريح (موسم التخييم من أكتوبر حتى نهاية أبريل)"
+        ],
+        "en": [
+          "Day visits 6am-6pm in Al-Summan and Al-Dahna with a prior permit",
+          "Visits outside those hours with a special permit that includes site coordinates",
+          "Camping only at authority-designated sites with a permit (camping season October to end of April)"
+        ]
+      },
+      "not_allowed": {
+        "ar": [
+          "الصيد",
+          "الاحتطاب",
+          "استخدام الحطب أو الفحم أو إشعال النار مباشرة على الأرض",
+          "دهس النباتات بالسيارة",
+          "ترك النفايات",
+          "إحداث الضوضاء والتشويه البصري",
+          "التعرض للكائنات الفطرية",
+          "الرعي دون تصريح (إلا للمجتمع المحلي المصرح له)",
+          "التخييم دون تصريح"
+        ],
+        "en": [
+          "Hunting",
+          "Firewood cutting/collecting",
+          "Using firewood/charcoal or lighting fires directly on the ground",
+          "Driving over vegetation",
+          "Littering",
+          "Noise and visual pollution",
+          "Disturbing wildlife",
+          "Grazing without a permit (only authorised local community)",
+          "Camping without a permit"
+        ]
+      },
+      "permits": {
+        "entry": true,
+        "camping": true,
+        "tours": true,
+        "grazing": true,
+        "ar": "يلزم تصريح مسبق عبر الموقع الإلكتروني للهيئة (karrda.gov.sa) قبل يومي عمل من الزيارة، يتضمن بيانات الزائر ومرافقيه ونوع المركبات والتعهد بالالتزام بالضوابط البيئية؛ يُستثنى أهالي المراكز الإدارية داخل المحمية المسجلون لدى الهيئة. الأنشطة السياحية والمخيمات التجارية تُرخَّص وفق ضوابط التصريح للأنشطة السياحية (قرار مجلس الإدارة 16/12/2024م). تصاريح المناحل عبر موقع الهيئة. لم تُنشر رسوم دخول.",
+        "en": "Prior permit from the authority's website (karrda.gov.sa), applied for 2 working days before the visit with visitor, companion and vehicle details plus a pledge to follow environmental rules; registered residents of administrative centres inside the reserve are exempt. Tourism activities and commercial camps are licensed under the Tourism Activities Licensing Regulations (board decision 16/12/2024). Beekeeping permits are also on the website. No entry fee found.",
+        "platform": "karrda.gov.sa",
+        "platform_url": "https://karrda.gov.sa/services",
+        "fees": null
+      },
+      "penalties_reported": {
+        "en": [
+          "Camping without a permit: up to SAR 3,000 (SFES statements reported in news)",
+          "Unauthorised grazing: up to SAR 500 per head of livestock (SPA)"
+        ]
+      },
+      "sources": [
+        "https://karrda.gov.sa/",
+        "https://karrda.gov.sa/services",
+        "https://my.gov.sa/en/agencies/18137",
+        "https://www.spa.gov.sa/en/N2079587",
+        "https://spa.gov.sa/en/N2408461",
+        "https://spa.gov.sa/en/N2333186",
+        "https://sabq.org/article/7hrqcEd",
+        "https://www.al-madina.com/article/939175",
+        "https://qanoniah.com/en/File/yvPb2agm87ry82XLJQGzr6O1W-Regulations-for-Recreation-in-the-Al-Summan-Area",
+        "https://qanoniah.com/en/File/zVa9Qpew87aAwM57A0lYDr5yG-Regulations-for-Licensing-Tourism-Activities-in-King-Abdul-Aziz-Royal-Reserve",
+        "https://www.uqn.gov.sa/details?p=26891",
+        "https://sabq.org/article/cdby9nv"
+      ],
+      "confidence": "official",
+      "notes": [
+        "center is a rough estimate by the researcher from published location descriptions (not from an official boundary file); verify against the official boundary/Protected Planet polygon before display.",
+        "Area conflict: 28,000 km2 (my.gov.sa, Saudipedia reserve page) vs 15,700 km2 (Saudipedia Council of Royal Reserves page) vs 45,000 km2 (another Saudipedia page). 28,000 used.",
+        "Entry/recreation rules updated June 2025 (published Umm al-Qura 4 July 2025) to cover Al-Dahna as well as Al-Summan.",
+        "The SAR 50,000 refundable deposit in the camping clauses applies to licensed tourism camp operators, not individual visitors (from the tourism licensing regulations).",
+        "Rawdat Khuraim is NOT in this reserve; per the 2018 royal order it is in Imam Abdulaziz bin Mohammed Royal Reserve.",
+        "Pages were read through search-engine excerpts only; direct fetch of karrda.gov.sa was blocked in this research environment."
+      ]
+    },
+    {
+      "key": "king-salman-royal-reserve",
+      "name_ar": "محمية الملك سلمان بن عبدالعزيز الملكية",
+      "name_en": "King Salman bin Abdulaziz Royal Reserve",
+      "type": "royal",
+      "region": [
+        "Al-Jouf",
+        "Tabuk",
+        "Hail",
+        "Northern Borders"
+      ],
+      "center": [
+        30.0,
+        38.5
+      ],
+      "area_km2": 130700,
+      "includes_former": [
+        "Harrat al-Harrah (حرة الحرة)",
+        "Al-Tubayq (الطبيق)",
+        "Al-Khunfah (الخنفة)"
+      ],
+      "website": "https://ksrnr.gov.sa/en",
+      "allowed": {
+        "ar": [
+          "الرحلات البرية ومراقبة الطيور",
+          "زيارة المواقع الجيولوجية والأثرية",
+          "التخييم والتصوير في المناطق المفتوحة للزوار ومواقع التخييم المعتمدة",
+          "المشاركة في البرامج التطوعية والتوعوية"
+        ],
+        "en": [
+          "Desert trips and birdwatching",
+          "Visiting geological and archaeological sites",
+          "Camping and photography in areas opened to visitors / designated camping sites",
+          "Volunteer and awareness programmes"
+        ]
+      },
+      "not_allowed": {
+        "ar": [
+          "الصيد داخل نطاق المحميات التابعة للهيئة",
+          "دخول المناطق المحمية المغلقة دون تصريح"
+        ],
+        "en": [
+          "Hunting anywhere within the reserve's protected areas",
+          "Entering closed protected areas (Harrat al-Harrah, Al-Tubayq, Al-Khunfah) without a permit"
+        ]
+      },
+      "permits": {
+        "entry": true,
+        "camping": true,
+        "tours": true,
+        "grazing": null,
+        "ar": "منصة التصاريح (permits.ksrnr.gov.sa) لدخول المناطق المحمية (حرة الحرة، الطبيق، الخنفة) والأنشطة السياحية والرحلات العلمية والتعليمية وجمع البذور وأعمال الصيانة، ولها تطبيق جوال. يشترط التسجيل في نفاذ، ورخصة قيادة للمركبات، وهوية وطنية أو إقامة. يُقدَّم الطلب قبل يوم الدخول بثلاثة أيام على الأقل. البريد: permits@ksrnr.gov.sa. لم تُنشر رسوم.",
+        "en": "Permit platform permits.ksrnr.gov.sa (web + mobile app) for entry to the protected areas (Harrat al-Harrah, Al-Tubayq, Al-Khunfah), tourism activities, scientific/educational trips, seed collection and maintenance. Requires Nafath registration, a driving licence for vehicles and national ID/iqama. Apply at least 3 days before entry (Entry & Exit Policy). Contact permits@ksrnr.gov.sa. No fees found.",
+        "platform": "KSRNR Permits",
+        "platform_url": "https://permits.ksrnr.gov.sa/en",
+        "fees": null
+      },
+      "penalties_reported": {
+        "en": [
+          "Hunting without a licence SAR 10,000; hunting in prohibited places SAR 5,000; entering a protected area without a permit SAR 5,000 (SFES via SPA)"
+        ]
+      },
+      "sources": [
+        "https://ksrnr.gov.sa/en",
+        "https://ksrnr.gov.sa/en/faqs",
+        "https://permits.ksrnr.gov.sa/en",
+        "https://permits.ksrnr.gov.sa/en/service-description/27308",
+        "https://permits.ksrnr.gov.sa/ar/taxonomy/term/326",
+        "https://dash.ksrnr.gov.sa/sites/default/files/2025-06/%D8%B3%D9%8A%D8%A7%D8%B3%D8%A9%20%D8%A7%D9%84%D8%AF%D8%AE%D9%88%D9%84%20%D9%88%D8%A7%D9%84%D8%AE%D8%B1%D9%88%D8%AC%20%D9%85%D9%86%20%D8%A7%D9%84%D9%85%D9%86%D8%A7%D8%B7%D9%82%20%D8%A7%D9%84%D9%85%D8%AD%D9%85%D9%8A%D8%A9%20(1)_0.pdf",
+        "https://www.spa.gov.sa/en/N2382475",
+        "https://www.spa.gov.sa/en/N2233570",
+        "https://www.spa.gov.sa/N2164178",
+        "https://www.spa.gov.sa/N2388058",
+        "https://my.gov.sa/en/agencies/18041"
+      ],
+      "confidence": "official",
+      "notes": [
+        "center is a rough estimate by the researcher from published location descriptions (not from an official boundary file); verify against the official boundary/Protected Planet polygon before display.",
+        "Former NCW protected areas Harrat al-Harrah, Al-Tubayq and Al-Khunfah were absorbed into this reserve.",
+        "No official text found on firewood, off-road driving or drones for visitors; the FAQ's 'visiting conditions' text was truncated in search excerpts.",
+        "Named camps: Naylat camp (Hail), Al-Tawil camp (Al-Jouf)."
+      ]
+    },
+    {
+      "key": "imam-turki-bin-abdullah-royal-reserve",
+      "name_ar": "محمية الإمام تركي بن عبدالله الملكية",
+      "name_en": "Imam Turki bin Abdullah Royal Reserve",
+      "type": "royal",
+      "region": [
+        "Hail",
+        "Al-Jouf",
+        "Northern Borders",
+        "Qassim",
+        "Eastern Province"
+      ],
+      "center": [
+        28.0,
+        43.0
+      ],
+      "area_km2": 91500,
+      "includes_former": [
+        "Al-Taysiyah (التيسية)"
+      ],
+      "website": "https://www.itba.gov.sa/",
+      "allowed": {
+        "ar": [
+          "في منطقة الحجرة وشمال طريق حائل-رفحاء الجديد: التنزه واستخدام خيم المبيت الشخصية دون تصريح",
+          "في باقي مناطق المحمية: التخييم بتصريح فوري عبر موقع الهيئة",
+          "العبور خلال الفترة المسموحة 6 صباحاً - 6 مساءً بتصريح عبور",
+          "الصيد المستدام في محمية الشمال للصيد المستدام فقط بتصريح",
+          "الرعي في النطاقات المحددة بتصريح"
+        ],
+        "en": [
+          "Al-Hajrah area and north of the new Hail-Rafha road: picnicking and personal overnight tents without a permit",
+          "Rest of the reserve: camping with an instant permit from the authority's website",
+          "Transit 6am-6pm with a transit (entry) permit",
+          "Sustainable hunting only in the North Reserve for Sustainable Hunting, with a permit",
+          "Grazing only in designated zones with a permit"
+        ]
+      },
+      "not_allowed": {
+        "ar": [
+          "التنزه والتخييم في منطقة التيسية وشمالها إلا عبر البرامج السياحية للهيئة",
+          "الصيد (عدا محمية الشمال للصيد المستدام)",
+          "الاحتطاب",
+          "إيذاء الحياة الفطرية",
+          "الرعي خارج المناطق المحددة"
+        ],
+        "en": [
+          "Picnicking/camping in Al-Taysiyah and north of it except via the authority's tourism programmes",
+          "Hunting (except North Sustainable Hunting Reserve)",
+          "Firewood cutting",
+          "Harming wildlife",
+          "Grazing outside designated zones"
+        ]
+      },
+      "permits": {
+        "entry": true,
+        "camping": true,
+        "tours": true,
+        "grazing": true,
+        "ar": "تصاريح إلكترونية عبر موقع الهيئة itba.gov.sa: تصريح عبور، تصريح التخييم (فوري)، تصاريح البحث العلمي، وتسجيل الرعي. الرقم الموحد 920022077، info@itba.gov.sa. لم تُنشر رسوم.",
+        "en": "Electronic permits on itba.gov.sa: transit/entry permit, camping permit (instant), research permits, and grazing registration. Unified number 920022077, info@itba.gov.sa. No fees found.",
+        "platform": "itba.gov.sa",
+        "platform_url": "https://itba.gov.sa/permits/camping-permit",
+        "fees": null
+      },
+      "sources": [
+        "https://www.itba.gov.sa/",
+        "https://www.itba.gov.sa/about",
+        "https://itba.gov.sa/permits/camping-permit",
+        "https://itba.gov.sa/permits/entry-permit",
+        "https://itba.gov.sa/faqs",
+        "https://sabq.org/article/xcNe_i7",
+        "https://www.spa.gov.sa/en/N2530981",
+        "https://www.spa.gov.sa/en/N2155904",
+        "https://www.spa.gov.sa/en/N2029349",
+        "https://my.gov.sa/en/agencies/18068"
+      ],
+      "confidence": "official",
+      "notes": [
+        "center is a rough estimate by the researcher from published location descriptions (not from an official boundary file); verify against the official boundary/Protected Planet polygon before display.",
+        "Zone-based camping rules come from a Sabq news report on the authority's announcement (around 2022); confirm on itba.gov.sa as they may have changed.",
+        "Regions conflict: SPA lists 5 regions incl. Eastern Province; a 2026 Arab News piece lists only Al-Jouf, Qassim, Hail, Northern Borders.",
+        "Area conflict: 91,500 km2 (official) vs 104,800 km2 and '>90,000' in Arab News.",
+        "Grazing regulations v5.0 issued Feb 2026."
+      ]
+    },
+    {
+      "key": "imam-abdulaziz-bin-mohammed-royal-reserve",
+      "name_ar": "محمية الإمام عبدالعزيز بن محمد الملكية",
+      "name_en": "Imam Abdulaziz bin Mohammed Royal Reserve",
+      "type": "royal",
+      "region": [
+        "Riyadh"
+      ],
+      "center": [
+        25.6,
+        47.3
+      ],
+      "area_km2": 11300,
+      "includes_former": [
+        "Rawdat Khuraim (روضة خريم)"
+      ],
+      "website": "https://www.iarda.gov.sa/",
+      "allowed": {
+        "ar": [
+          "التنزه لفترة محدودة في مناطق محددة منها روضة خريم",
+          "التخييم والهايكنج عبر مقدمي خدمات السياحة البيئية المرخصين أو في منطقة التخييم الذاتي (قصر المزيرع)",
+          "أنشطة موسم العرمة (تخييم، هايكنج، ركوب الإبل، الدراجات، رصد النجوم)"
+        ],
+        "en": [
+          "Recreational visits for limited periods in designated areas including Rawdat Khuraim",
+          "Camping and hiking via licensed eco-tourism operators or at the self-camping zone (Kasr Al-Mazari')",
+          "Al-Urumah season activities (camping, hiking, camel riding, cycling, stargazing)"
+        ]
+      },
+      "not_allowed": {
+        "ar": [
+          "الصيد بجميع أشكاله",
+          "الرعي إلا للمصرح لهم من أهالي القرى داخل المحمية",
+          "ترك النفايات أو دفنها أو حرقها",
+          "إدخال الألعاب النارية",
+          "إشعال النار خارج الأماكن المخصصة",
+          "العبث بالعلامات الحدودية"
+        ],
+        "en": [
+          "Hunting in any form",
+          "Grazing except authorised residents of villages inside the reserve",
+          "Leaving, burying or burning waste",
+          "Fireworks",
+          "Fires outside designated places",
+          "Tampering with boundary markers"
+        ]
+      },
+      "permits": {
+        "entry": null,
+        "camping": true,
+        "tours": true,
+        "grazing": true,
+        "ar": "لا توجد رسوم دخول حالياً وفق الأسئلة الشائعة للهيئة، ومقدمو الخدمات قد يتقاضون رسوماً على الأنشطة. التخييم عبر مقدمي خدمات مرخصين أو منطقة التخييم الذاتي. تصاريح الرعي ودخول المحمية عبر منصة العرمة الرقمية (urmah.iarda.gov.sa) بتسجيل الدخول عبر نفاذ.",
+        "en": "No entry fee currently (authority FAQ); operators may charge for activities. Camping via licensed operators or the self-camping zone. Grazing and entry permits via the Urmah digital platform (urmah.iarda.gov.sa) with Nafath login.",
+        "platform": "Urmah (العرمة)",
+        "platform_url": "https://urmah.iarda.gov.sa/nafathlogin",
+        "fees": "No entry fee (per IARDA FAQ)"
+      },
+      "sources": [
+        "https://www.iarda.gov.sa/welcome/en/",
+        "https://new.iarda.gov.sa/",
+        "https://urmah.iarda.gov.sa/nafathlogin",
+        "https://www.iarda.gov.sa/urmah-season/activity-detail/166?tag=1",
+        "https://www.iarda.gov.sa/urmah-season/activity-detail/188?p=1",
+        "https://www.spa.gov.sa/en/N2164251",
+        "https://spa.gov.sa/en/N2341472",
+        "https://www.spa.gov.sa/en/N2639677",
+        "https://eparticipation.my.gov.sa/en/e-consultations/consultations/legal/legal-consultation-36294/",
+        "https://my.gov.sa/en/agencies/18083"
+      ],
+      "confidence": "official",
+      "notes": [
+        "center is a rough estimate by the researcher from published location descriptions (not from an official boundary file); verify against the official boundary/Protected Planet polygon before display.",
+        "The same authority (IARDA) also manages King Khalid Royal Reserve.",
+        "Area 11,300 km2 from Saudipedia (secondary).",
+        "Whether the self-camping zone needs a separate permit was not confirmed."
+      ]
+    },
+    {
+      "key": "king-khalid-royal-reserve",
+      "name_ar": "محمية الملك خالد الملكية",
+      "name_en": "King Khalid Royal Reserve",
+      "type": "royal",
+      "region": [
+        "Riyadh"
+      ],
+      "center": [
+        25.2,
+        46.65
+      ],
+      "area_km2": 720,
+      "includes_former": [
+        "Thumamah National Park (متنزه الثمامة)"
+      ],
+      "website": "https://www.iarda.gov.sa/eco-tourism-activities/king-khalid-reserve-activities/",
+      "allowed": {
+        "ar": [
+          "الزيارة بحجز مسبق عبر أحد مقدمي خدمات السياحة البيئية المرخصين وتحت إشرافهم"
+        ],
+        "en": [
+          "Visits only by advance booking with a licensed eco-tourism operator, under the operator's supervision"
+        ]
+      },
+      "not_allowed": {
+        "ar": [
+          "الصيد بجميع أشكاله",
+          "الدخول دون حجز عبر مقدم خدمة مرخص"
+        ],
+        "en": [
+          "Hunting in any form",
+          "Entry without booking via a licensed operator"
+        ]
+      },
+      "permits": {
+        "entry": true,
+        "camping": true,
+        "tours": true,
+        "grazing": null,
+        "ar": "يُصدر مقدم الخدمة المرخص تصريح الدخول عند الحجز. قواعد ترخيص الأنشطة منشورة على موقع الهيئة.",
+        "en": "Entry permits are issued by the licensed tourism operator when booking. Activity licensing rules are published on iarda.gov.sa.",
+        "platform": "Licensed operators (listed by IARDA)",
+        "platform_url": "https://www.iarda.gov.sa/eco-tourism-activities/king-khalid-reserve-activities/",
+        "fees": null
+      },
+      "sources": [
+        "https://www.iarda.gov.sa/eco-tourism-activities/king-khalid-reserve-activities/",
+        "https://www.iarda.gov.sa/resources/KKRR/%D9%82%D9%88%D8%A7%D8%B9%D8%AF%20%D8%AA%D8%B1%D8%AE%D9%8A%D8%B5%20%D8%A7%D9%84%D8%A3%D9%86%D8%B4%D8%B7%D8%A9%20%D9%81%D9%8A%20%D9%85%D8%AD%D9%85%D9%8A%D8%A9%20%D8%A7%D9%84%D9%85%D9%84%D9%83%20%D8%AE%D8%A7%D9%84%D8%AF%20%D8%A7%D9%84%D9%85%D9%84%D9%83%D9%8A%D8%A9.pdf",
+        "https://www.spa.gov.sa/en/N2164251",
+        "https://eparticipation.my.gov.sa/en/e-consultations/consultations/legal/legal-consultation-36295/",
+        "https://en.wikipedia.org/wiki/King_Khalid_Royal_Reserve"
+      ],
+      "confidence": "official",
+      "notes": [
+        "center is a rough estimate by the researcher from published location descriptions (not from an official boundary file); verify against the official boundary/Protected Planet polygon before display.",
+        "Converted from Thumamah park to a royal reserve 2 Oct 2019.",
+        "Area 720 km2 from Saudipedia/Wikipedia (secondary); unit is not stated clearly in one source.",
+        "No dedicated website; managed by IARDA."
+      ]
+    },
+    {
+      "key": "imam-saud-bin-abdulaziz-royal-reserve",
+      "name_ar": "محمية الإمام سعود بن عبدالعزيز الملكية",
+      "name_en": "Imam Saud bin Abdulaziz Royal Reserve",
+      "type": "royal",
+      "region": [
+        "Makkah"
+      ],
+      "center": [
+        22.25,
+        41.8
+      ],
+      "area_km2": 2240,
+      "includes_former": [
+        "Mahazat as-Sayd (محازة الصيد)"
+      ],
+      "website": null,
+      "allowed": {
+        "ar": [],
+        "en": []
+      },
+      "not_allowed": {
+        "ar": [
+          "الصيد",
+          "الرعي الجائر",
+          "الاحتطاب"
+        ],
+        "en": [
+          "Hunting",
+          "Overgrazing",
+          "Firewood cutting"
+        ]
+      },
+      "permits": {
+        "entry": null,
+        "camping": null,
+        "tours": null,
+        "grazing": null,
+        "ar": null,
+        "en": null,
+        "platform": null,
+        "platform_url": null,
+        "fees": null
+      },
+      "sources": [
+        "https://saudipedia.com/en/imam-saud-bin-abdulaziz-royal-reserve",
+        "https://protectedplanet.net/19556",
+        "https://www.spa.gov.sa/w805963",
+        "https://ncw.gov.sa/en/protected-areas",
+        "https://english.alarabiya.net/features/2018/06/02/Saudi-Arabia-determines-names-several-areas-royal-reserves"
+      ],
+      "confidence": "secondary",
+      "notes": [
+        "center is a rough estimate by the researcher from published location descriptions (not from an official boundary file); verify against the official boundary/Protected Planet polygon before display.",
+        "Former Mahazat as-Sayd, renamed by the 2 June 2018 royal order; about 180 km NE of Taif.",
+        "Still listed on NCW's protected-areas page, which suggests NCW manages it on the ground; no separate development authority or website found.",
+        "The not-allowed list comes from the objectives in the royal order (limit hunting and overgrazing, prevent firewood cutting), not from published visitor rules.",
+        "Area conflict: 2,240 km2 (Council page, Protected Planet) vs about 2,553 km2 (Saudipedia). One Saudipedia list wrongly places it near NEOM/AlUla.",
+        "No visitor, camping or permit information found; Mahazat as-Sayd has historically been a fenced reintroduction site."
+      ]
+    },
+    {
+      "key": "prince-mohammed-bin-salman-royal-reserve",
+      "name_ar": "محمية الأمير محمد بن سلمان الملكية",
+      "name_en": "Prince Mohammed bin Salman Royal Reserve",
+      "type": "royal",
+      "region": [
+        "Tabuk",
+        "Madinah"
+      ],
+      "center": [
+        26.8,
+        37.0
+      ],
+      "area_km2": 24500,
+      "includes_former": [],
+      "website": "https://pmbsrr.gov.sa/",
+      "allowed": {
+        "ar": [
+          "الزيارات النهارية مسموحة ومعظم مناطق المحمية مفتوحة للعامة",
+          "الدخول دون تصريح مع الالتزام باللوحات الإرشادية ومناطق منع الدخول"
+        ],
+        "en": [
+          "Day visits welcome; most areas open to the public",
+          "Entry without a permit, provided signage and no-entry zones are respected"
+        ]
+      },
+      "not_allowed": {
+        "ar": [
+          "الصيد ممنوع منعاً باتاً",
+          "دخول المناطق المحظورة"
+        ],
+        "en": [
+          "Hunting (strictly prohibited)",
+          "Entering no-entry areas"
+        ]
+      },
+      "permits": {
+        "entry": false,
+        "camping": null,
+        "tours": true,
+        "grazing": null,
+        "ar": "لا يلزم تصريح للدخول، لكن بعض الأنشطة تحتاج تصريحاً. تصريح الاستخدام الخاص يشمل الفعاليات والتجمعات والأنشطة الجماعية الكبيرة والمخيمات والزيارات الرسمية. يلزم تصريح من الهيئة لمزاولة أي نشاط تجاري داخل المحمية. نُشرت مسودة ضوابط للتنزه والتخييم تحدد فيها الهيئة المناطق والمواسم والمسارات والمعدات المسموحة.",
+        "en": "No permit is needed to enter, but some activities need one. A Special Use Permit covers events, gatherings, large group activities, camps and official visits. Operating any business inside the reserve requires an authority permit. Draft hiking/camping rules (authority sets zones, seasons, routes and allowed equipment) have been published for consultation.",
+        "platform": "pmbsrr.gov.sa",
+        "platform_url": "https://pmbsrr.gov.sa/conservation-jobs-and-permits/",
+        "fees": null
+      },
+      "sources": [
+        "https://pmbsrr.gov.sa/",
+        "https://pmbsrr.gov.sa/conservation-jobs-and-permits/",
+        "https://pmbsrr.gov.sa/contact/",
+        "https://www.spa.gov.sa/en/N2151054",
+        "https://my.gov.sa/en/agencies/18053",
+        "https://en.wikipedia.org/wiki/Prince_Mohammad_bin_Salman_Royal_Reserve"
+      ],
+      "confidence": "official",
+      "notes": [
+        "center is a rough estimate by the researcher from published location descriptions (not from an official boundary file); verify against the official boundary/Protected Planet polygon before display.",
+        "Lies between NEOM, the Red Sea project and AlUla; includes marine areas.",
+        "The FAQ 'no permit to enter' statement was about 2 years old when indexed.",
+        "Whether individual (non-group) camping needs a permit was not confirmed; final camping rules are not yet published (draft)."
+      ]
+    },
+    {
+      "key": "imam-faisal-bin-turki-royal-reserve",
+      "name_ar": "محمية الإمام فيصل بن تركي الملكية",
+      "name_en": "Imam Faisal bin Turki Royal Reserve",
+      "type": "royal",
+      "region": [
+        "Asir",
+        "Jazan",
+        "Makkah"
+      ],
+      "center": null,
+      "area_km2": 30152.7,
+      "includes_former": [],
+      "website": null,
+      "allowed": {
+        "ar": [],
+        "en": []
+      },
+      "not_allowed": {
+        "ar": [
+          "التخييم دون تصريح",
+          "إشعال النار في غير الأماكن المخصصة"
+        ],
+        "en": [
+          "Camping without a permit",
+          "Lighting fires outside designated places"
+        ]
+      },
+      "permits": {
+        "entry": null,
+        "camping": true,
+        "tours": null,
+        "grazing": null,
+        "ar": "تشير بيانات القوات الخاصة للأمن البيئي إلى أن التخييم يتطلب ترخيصاً، لكن لم يُعثر على منصة إصدار رسمية للمحمية.",
+        "en": "Environmental Security statements indicate camping requires a licence, but no official issuing platform for this reserve was found.",
+        "platform": null,
+        "platform_url": null,
+        "fees": null
+      },
+      "penalties_reported": {
+        "en": [
+          "Camping without a permit up to SAR 3,000; lighting fire in undesignated place up to SAR 3,000 (SFES via news)"
+        ]
+      },
+      "sources": [
+        "https://www.spa.gov.sa/en/e24517aceei",
+        "https://saudigazette.com.sa/article/636567/SAUDI-ARABIA/Saudi-Arabia-sets-up-Imam-Faisal-bin-Turki-Royal-Reserve-covering-Asir-Jazan-and-Makkah-regions",
+        "https://www.asda.gov.sa/en/projects/imam-faisal-bin-turki-royal-reserve/",
+        "https://www.argaam.com/en/article/articledetail/id/1675333",
+        "https://saudigazette.com.sa/article/637388",
+        "https://protectedplanet.net/555785932?locale=en"
+      ],
+      "confidence": "secondary",
+      "notes": [
+        "Established by high order in Oct 2023 as the 8th royal reserve; extends into Red Sea territorial waters.",
+        "No dedicated authority website found; Aseer Development Authority lists it as a project.",
+        "center left null because no reliable location for the centroid was found (spans Tihama/Sarawat across three regions).",
+        "One news aggregator wrongly placed it in Riyadh."
+      ]
+    },
+    {
+      "key": "uruq-bani-maarid",
+      "name_ar": "محمية عروق بني معارض",
+      "name_en": "Uruq Bani Ma'arid Protected Area",
+      "region": [
+        "Riyadh",
+        "Najran"
+      ],
+      "center": [
+        19.4,
+        45.6
+      ],
+      "area_km2": 12765,
+      "includes_former": [],
+      "website": "https://www.ncw.gov.sa/En/Wildlife/ProtectedAreas/Pages/uruq-bani-ma-arid.aspx",
+      "allowed": {
+        "ar": [
+          "التخييم في المواقع المخصصة خلال الموسم الشتوي (تخييم بالمعدات الشخصية، ومخيمات عائلية طويلة)",
+          "المسارات السياحية"
+        ],
+        "en": [
+          "Camping at designated sites in winter (pitch-and-strike with own gear; longer-stay family/Bedouin-style camps)",
+          "Tourist trails"
+        ]
+      },
+      "not_allowed": {
+        "ar": [
+          "الصيد داخل المناطق المحمية",
+          "التخييم خارج المواقع المخصصة أو دون تصريح",
+          "إشعال النار خارج الأماكن المخصصة",
+          "ترك النفايات",
+          "إزعاج الحياة الفطرية"
+        ],
+        "en": [
+          "Hunting inside protected areas",
+          "Camping outside designated sites or without a permit",
+          "Fires outside designated places",
+          "Littering",
+          "Disturbing wildlife"
+        ]
+      },
+      "permits": {
+        "entry": null,
+        "camping": true,
+        "tours": null,
+        "grazing": null,
+        "ar": "تُحجز مواقع التخييم وتُستخرج التصاريح في المناطق المحمية التابعة للمركز عبر منصة فطري (موسم التخييم 2025-2026 أُعلن في ديسمبر 2025). زيارة محمية الوعول تتطلب ترخيص زيارة عبر منصة فطري. لم تُنشر رسوم.",
+        "en": "Campsites in NCW protected areas are reserved and permits issued through the Fitri platform (2025-26 camping season announced Dec 2025). Visiting the Ibex reserve requires a visit licence via Fitri. No fees found.",
+        "platform": "Fitri (فطري) - NCW",
+        "platform_url": null,
+        "fees": null
+      },
+      "sources": [
+        "https://ncw.gov.sa/en/protected-areas",
+        "https://ncw.gov.sa/en/ecoT",
+        "https://www.spa.gov.sa/en/N2456002",
+        "https://www.spa.gov.sa/en/N2665972",
+        "https://www.ncw.gov.sa/assets/files/open-data/Uruq-Bani-Ma'arid-MP.pdf",
+        "https://www.spa.gov.sa/en/N2345780",
+        "https://iucngreenlist.org/sites/uruq-bani-maarid-protected-area/",
+        "https://www.spa.gov.sa/en/N2418227"
+      ],
+      "confidence": "official",
+      "notes": [
+        "center is a rough estimate by the researcher from published location descriptions (not from an official boundary file); verify against the official boundary/Protected Planet polygon before display.",
+        "not_allowed list is the general NCW/hunting-season rule set (hunting banned in protected areas; camping via designated sites/Fitri), not a site-specific published list.",
+        "UNESCO World Heritage (Sept 2023), IUCN Green List (June 2025).",
+        "Area conflict: 12,765 / 12,787 / 12,693 / 12,684 km2 across NCW, SPA and IUCN pages.",
+        "Region assignment (Riyadh/Najran, western edge of the Empty Quarter) is the researcher's inference."
+      ],
+      "type": "ncw"
+    },
+    {
+      "key": "ibex-reserve",
+      "name_ar": "محمية الوعول",
+      "name_en": "Ibex Reserve Protected Area (Hawtat Bani Tamim)",
+      "region": [
+        "Riyadh"
+      ],
+      "center": [
+        23.3,
+        46.7
+      ],
+      "area_km2": 1840.9,
+      "includes_former": [],
+      "website": "https://www.ncw.gov.sa/En/Wildlife/ProtectedAreas/Pages/ibex-reserve.aspx",
+      "allowed": {
+        "ar": [
+          "الزيارة بترخيص عبر منصة فطري",
+          "التخييم ومسارات المشي (برامج المركز)",
+          "التخييم الشتوي في المواقع المخصصة"
+        ],
+        "en": [
+          "Visits with a Fitri visit licence",
+          "Camping and hiking trails (NCW programmes)",
+          "Winter camping at designated sites"
+        ]
+      },
+      "not_allowed": {
+        "ar": [
+          "الصيد داخل المناطق المحمية",
+          "التخييم خارج المواقع المخصصة أو دون تصريح",
+          "إشعال النار خارج الأماكن المخصصة",
+          "ترك النفايات",
+          "إزعاج الحياة الفطرية"
+        ],
+        "en": [
+          "Hunting inside protected areas",
+          "Camping outside designated sites or without a permit",
+          "Fires outside designated places",
+          "Littering",
+          "Disturbing wildlife"
+        ]
+      },
+      "permits": {
+        "entry": true,
+        "camping": true,
+        "tours": null,
+        "grazing": null,
+        "ar": "تُحجز مواقع التخييم وتُستخرج التصاريح في المناطق المحمية التابعة للمركز عبر منصة فطري (موسم التخييم 2025-2026 أُعلن في ديسمبر 2025). زيارة محمية الوعول تتطلب ترخيص زيارة عبر منصة فطري. لم تُنشر رسوم.",
+        "en": "Campsites in NCW protected areas are reserved and permits issued through the Fitri platform (2025-26 camping season announced Dec 2025). Visiting the Ibex reserve requires a visit licence via Fitri. No fees found.",
+        "platform": "Fitri (فطري) - NCW",
+        "platform_url": null,
+        "fees": null
+      },
+      "sources": [
+        "https://ncw.gov.sa/en/protected-areas",
+        "https://ncw.gov.sa/en/ecoT",
+        "https://www.spa.gov.sa/en/N2456002",
+        "https://www.spa.gov.sa/en/N2665972",
+        "https://sabq.org/article/L3eLwQg",
+        "https://ncw.gov.sa/en/news/Ibex_Protected_Area_Becomes_the_First_Saudi_Site_to_Meet_International_Standards_and_Join_the_IUCN_Green_List",
+        "https://www.arabnews.pk/node/2537696/saudi-arabia",
+        "https://hima.ncw.gov.sa/?p=453"
+      ],
+      "confidence": "official",
+      "notes": [
+        "center is a rough estimate by the researcher from published location descriptions (not from an official boundary file); verify against the official boundary/Protected Planet polygon before display.",
+        "not_allowed list is the general NCW/hunting-season rule set (hunting banned in protected areas; camping via designated sites/Fitri), not a site-specific published list.",
+        "First Saudi IUCN Green List site (Oct 2024).",
+        "Area 1,840.9 km2 (NCW) vs 1,841 (SPA-based) vs 2,369 (Wikipedia mirror).",
+        "Distance from Riyadh conflicts: ~120 km vs ~180 km."
+      ],
+      "type": "ncw"
+    },
+    {
+      "key": "farasan-islands",
+      "name_ar": "محمية جزر فرسان",
+      "name_en": "Farasan Islands Protected Area",
+      "region": [
+        "Jazan"
+      ],
+      "center": [
+        16.75,
+        42.0
+      ],
+      "area_km2": 5408,
+      "includes_former": [],
+      "website": null,
+      "allowed": {
+        "ar": [
+          "التخييم الشتوي في المواقع المخصصة"
+        ],
+        "en": [
+          "Winter camping at designated sites"
+        ]
+      },
+      "not_allowed": {
+        "ar": [
+          "الصيد داخل المناطق المحمية",
+          "التخييم خارج المواقع المخصصة أو دون تصريح",
+          "إشعال النار خارج الأماكن المخصصة",
+          "ترك النفايات",
+          "إزعاج الحياة الفطرية"
+        ],
+        "en": [
+          "Hunting inside protected areas",
+          "Camping outside designated sites or without a permit",
+          "Fires outside designated places",
+          "Littering",
+          "Disturbing wildlife"
+        ]
+      },
+      "permits": {
+        "entry": null,
+        "camping": true,
+        "tours": null,
+        "grazing": null,
+        "ar": "تُحجز مواقع التخييم وتُستخرج التصاريح في المناطق المحمية التابعة للمركز عبر منصة فطري (موسم التخييم 2025-2026 أُعلن في ديسمبر 2025). زيارة محمية الوعول تتطلب ترخيص زيارة عبر منصة فطري. لم تُنشر رسوم.",
+        "en": "Campsites in NCW protected areas are reserved and permits issued through the Fitri platform (2025-26 camping season announced Dec 2025). Visiting the Ibex reserve requires a visit licence via Fitri. No fees found.",
+        "platform": "Fitri (فطري) - NCW",
+        "platform_url": null,
+        "fees": null
+      },
+      "sources": [
+        "https://ncw.gov.sa/en/protected-areas",
+        "https://ncw.gov.sa/en/ecoT",
+        "https://www.spa.gov.sa/en/N2456002",
+        "https://www.spa.gov.sa/en/N2665972",
+        "https://ncw.gov.sa:443/assets/files/open-data/Farasan_Islands_PA_General_Management_Plan.pdf",
+        "https://www.keybiodiversityareas.org/site/factsheet/8290",
+        "https://english.aawsat.com/varieties/5214806-farasan-islands-become-saudi-arabias-1st-registered-marine-reserve-under-ramsar"
+      ],
+      "confidence": "official",
+      "notes": [
+        "center is a rough estimate by the researcher from published location descriptions (not from an official boundary file); verify against the official boundary/Protected Planet polygon before display.",
+        "not_allowed list is the general NCW/hunting-season rule set (hunting banned in protected areas; camping via designated sites/Fitri), not a site-specific published list.",
+        "Area 5,408 km2 (land + sea); KBA 5,394; IMMA 5,889; land only about 710 km2 (UNESCO tentative list).",
+        "Ramsar site; IUCN Green List honour.",
+        "No dedicated NCW page URL confirmed."
+      ],
+      "type": "ncw"
+    },
+    {
+      "key": "majami-al-hadb",
+      "name_ar": "محمية مجامع الهضب",
+      "name_en": "Majami' al-Hadb Protected Area",
+      "region": [
+        "Riyadh"
+      ],
+      "center": [
+        23.9,
+        44.5
+      ],
+      "area_km2": 1181,
+      "includes_former": [],
+      "website": null,
+      "allowed": {
+        "ar": [
+          "التخييم الشتوي في المواقع المخصصة"
+        ],
+        "en": [
+          "Winter camping at designated sites"
+        ]
+      },
+      "not_allowed": {
+        "ar": [
+          "الصيد داخل المناطق المحمية",
+          "التخييم خارج المواقع المخصصة أو دون تصريح",
+          "إشعال النار خارج الأماكن المخصصة",
+          "ترك النفايات",
+          "إزعاج الحياة الفطرية"
+        ],
+        "en": [
+          "Hunting inside protected areas",
+          "Camping outside designated sites or without a permit",
+          "Fires outside designated places",
+          "Littering",
+          "Disturbing wildlife"
+        ]
+      },
+      "permits": {
+        "entry": null,
+        "camping": true,
+        "tours": null,
+        "grazing": null,
+        "ar": "تُحجز مواقع التخييم وتُستخرج التصاريح في المناطق المحمية التابعة للمركز عبر منصة فطري (موسم التخييم 2025-2026 أُعلن في ديسمبر 2025). زيارة محمية الوعول تتطلب ترخيص زيارة عبر منصة فطري. لم تُنشر رسوم.",
+        "en": "Campsites in NCW protected areas are reserved and permits issued through the Fitri platform (2025-26 camping season announced Dec 2025). Visiting the Ibex reserve requires a visit licence via Fitri. No fees found.",
+        "platform": "Fitri (فطري) - NCW",
+        "platform_url": null,
+        "fees": null
+      },
+      "sources": [
+        "https://ncw.gov.sa/en/protected-areas",
+        "https://ncw.gov.sa/en/ecoT",
+        "https://www.spa.gov.sa/en/N2456002",
+        "https://www.spa.gov.sa/en/N2665972",
+        "https://www.protectedplanet.net/28822",
+        "https://saudipedia.com/en/article/952/geography/reserves/majami-al-hadb-reserve"
+      ],
+      "confidence": "official",
+      "notes": [
+        "center is a rough estimate by the researcher from published location descriptions (not from an official boundary file); verify against the official boundary/Protected Planet polygon before display.",
+        "not_allowed list is the general NCW/hunting-season rule set (hunting banned in protected areas; camping via designated sites/Fitri), not a site-specific published list.",
+        "Area conflict: 1,181 km2 (NCW page) vs 2,256.4 (Saudipedia) vs 3,400 (Mori Atlas).",
+        "Region and center are low-confidence estimates; verify."
+      ],
+      "type": "ncw"
+    },
+    {
+      "key": "nafud-al-urayq",
+      "name_ar": "محمية نفود العريق",
+      "name_en": "Nafud al-'Urayq Protected Area",
+      "region": [
+        "Qassim",
+        "Riyadh"
+      ],
+      "center": [
+        25.0,
+        42.8
+      ],
+      "area_km2": 2034,
+      "includes_former": [],
+      "website": null,
+      "allowed": {
+        "ar": [
+          "التخييم الشتوي في المواقع المخصصة"
+        ],
+        "en": [
+          "Winter camping at designated sites"
+        ]
+      },
+      "not_allowed": {
+        "ar": [
+          "الصيد داخل المناطق المحمية",
+          "التخييم خارج المواقع المخصصة أو دون تصريح",
+          "إشعال النار خارج الأماكن المخصصة",
+          "ترك النفايات",
+          "إزعاج الحياة الفطرية"
+        ],
+        "en": [
+          "Hunting inside protected areas",
+          "Camping outside designated sites or without a permit",
+          "Fires outside designated places",
+          "Littering",
+          "Disturbing wildlife"
+        ]
+      },
+      "permits": {
+        "entry": null,
+        "camping": true,
+        "tours": null,
+        "grazing": null,
+        "ar": "تُحجز مواقع التخييم وتُستخرج التصاريح في المناطق المحمية التابعة للمركز عبر منصة فطري (موسم التخييم 2025-2026 أُعلن في ديسمبر 2025). زيارة محمية الوعول تتطلب ترخيص زيارة عبر منصة فطري. لم تُنشر رسوم.",
+        "en": "Campsites in NCW protected areas are reserved and permits issued through the Fitri platform (2025-26 camping season announced Dec 2025). Visiting the Ibex reserve requires a visit licence via Fitri. No fees found.",
+        "platform": "Fitri (فطري) - NCW",
+        "platform_url": null,
+        "fees": null
+      },
+      "sources": [
+        "https://ncw.gov.sa/en/protected-areas",
+        "https://ncw.gov.sa/en/ecoT",
+        "https://www.spa.gov.sa/en/N2456002",
+        "https://www.spa.gov.sa/en/N2665972",
+        "https://saudipedia.com/en/article/930/geography/reserves/nufud-al-urayq-natural-reserve"
+      ],
+      "confidence": "official",
+      "notes": [
+        "center is a rough estimate by the researcher from published location descriptions (not from an official boundary file); verify against the official boundary/Protected Planet polygon before display.",
+        "not_allowed list is the general NCW/hunting-season rule set (hunting banned in protected areas; camping via designated sites/Fitri), not a site-specific published list.",
+        "Area 2,034 km2 (NCW) vs about 2,036 (Saudipedia).",
+        "Region and center are low-confidence estimates; verify."
+      ],
+      "type": "ncw"
+    },
+    {
+      "key": "saja-umm-ar-rimth",
+      "name_ar": "محمية سجا وأم الرمث",
+      "name_en": "Saja and Umm ar-Rimth Protected Area",
+      "region": [
+        "Makkah",
+        "Riyadh"
+      ],
+      "center": [
+        23.0,
+        42.0
+      ],
+      "area_km2": 6528.2,
+      "includes_former": [],
+      "website": null,
+      "allowed": {
+        "ar": [],
+        "en": []
+      },
+      "not_allowed": {
+        "ar": [
+          "الصيد داخل المناطق المحمية",
+          "التخييم خارج المواقع المخصصة أو دون تصريح",
+          "إشعال النار خارج الأماكن المخصصة",
+          "ترك النفايات",
+          "إزعاج الحياة الفطرية"
+        ],
+        "en": [
+          "Hunting inside protected areas",
+          "Camping outside designated sites or without a permit",
+          "Fires outside designated places",
+          "Littering",
+          "Disturbing wildlife"
+        ]
+      },
+      "permits": {
+        "entry": null,
+        "camping": null,
+        "tours": null,
+        "grazing": null,
+        "ar": "تُحجز مواقع التخييم وتُستخرج التصاريح في المناطق المحمية التابعة للمركز عبر منصة فطري (موسم التخييم 2025-2026 أُعلن في ديسمبر 2025). زيارة محمية الوعول تتطلب ترخيص زيارة عبر منصة فطري. لم تُنشر رسوم.",
+        "en": "Campsites in NCW protected areas are reserved and permits issued through the Fitri platform (2025-26 camping season announced Dec 2025). Visiting the Ibex reserve requires a visit licence via Fitri. No fees found.",
+        "platform": "Fitri (فطري) - NCW",
+        "platform_url": null,
+        "fees": null
+      },
+      "sources": [
+        "https://ncw.gov.sa/en/protected-areas",
+        "https://ncw.gov.sa/en/ecoT",
+        "https://www.spa.gov.sa/en/N2456002",
+        "https://www.spa.gov.sa/en/N2665972",
+        "https://www.protectedplanet.net/101911",
+        "https://saudipedia.com/en/list-of-natural-reserves-in-saudi-arabia"
+      ],
+      "confidence": "official",
+      "notes": [
+        "center is a rough estimate by the researcher from published location descriptions (not from an official boundary file); verify against the official boundary/Protected Planet polygon before display.",
+        "not_allowed list is the general NCW/hunting-season rule set (hunting banned in protected areas; camping via designated sites/Fitri), not a site-specific published list.",
+        "Listed on NCW protected-areas page; area from Protected Planet/Saudipedia.",
+        "No visitor/camping info found; not in NCW's winter-camping list.",
+        "Region and center are low-confidence estimates; verify."
+      ],
+      "type": "ncw"
+    },
+    {
+      "key": "jurf-raydah",
+      "name_ar": "محمية جرف ريدة",
+      "name_en": "Jurf Raydah Protected Area",
+      "region": [
+        "Asir"
+      ],
+      "center": [
+        18.2,
+        42.4
+      ],
+      "area_km2": 10,
+      "includes_former": [],
+      "website": "https://www.ncw.gov.sa/En/Wildlife/ProtectedAreas/Pages/raydah.aspx",
+      "allowed": {
+        "ar": [],
+        "en": []
+      },
+      "not_allowed": {
+        "ar": [
+          "الصيد داخل المناطق المحمية",
+          "التخييم خارج المواقع المخصصة أو دون تصريح",
+          "إشعال النار خارج الأماكن المخصصة",
+          "ترك النفايات",
+          "إزعاج الحياة الفطرية"
+        ],
+        "en": [
+          "Hunting inside protected areas",
+          "Camping outside designated sites or without a permit",
+          "Fires outside designated places",
+          "Littering",
+          "Disturbing wildlife"
+        ]
+      },
+      "permits": {
+        "entry": null,
+        "camping": null,
+        "tours": null,
+        "grazing": null,
+        "ar": "تُحجز مواقع التخييم وتُستخرج التصاريح في المناطق المحمية التابعة للمركز عبر منصة فطري (موسم التخييم 2025-2026 أُعلن في ديسمبر 2025). زيارة محمية الوعول تتطلب ترخيص زيارة عبر منصة فطري. لم تُنشر رسوم.",
+        "en": "Campsites in NCW protected areas are reserved and permits issued through the Fitri platform (2025-26 camping season announced Dec 2025). Visiting the Ibex reserve requires a visit licence via Fitri. No fees found.",
+        "platform": "Fitri (فطري) - NCW",
+        "platform_url": null,
+        "fees": null
+      },
+      "sources": [
+        "https://ncw.gov.sa/en/protected-areas",
+        "https://ncw.gov.sa/en/ecoT",
+        "https://www.spa.gov.sa/en/N2456002",
+        "https://www.spa.gov.sa/en/N2665972",
+        "https://www.ncw.gov.sa/En/Wildlife/ProtectedAreas/Pages/raydah.aspx"
+      ],
+      "confidence": "official",
+      "notes": [
+        "center is a rough estimate by the researcher from published location descriptions (not from an official boundary file); verify against the official boundary/Protected Planet polygon before display.",
+        "not_allowed list is the general NCW/hunting-season rule set (hunting banned in protected areas; camping via designated sites/Fitri), not a site-specific published list.",
+        "Area 10 km2 (newest NCW page) vs 9.33 km2 (older NCW page).",
+        "No camping info found (small escarpment forest)."
+      ],
+      "type": "ncw"
+    },
+    {
+      "key": "jabal-shada-al-ala",
+      "name_ar": "محمية جبل شدا الأعلى",
+      "name_en": "Jabal Shada al-A'la Protected Area",
+      "region": [
+        "Al-Baha"
+      ],
+      "center": [
+        19.85,
+        41.3
+      ],
+      "area_km2": 77,
+      "includes_former": [],
+      "website": "https://www.ncw.gov.sa/En/Wildlife/ProtectedAreas/Pages/jabal-shada.aspx",
+      "allowed": {
+        "ar": [],
+        "en": []
+      },
+      "not_allowed": {
+        "ar": [
+          "الصيد داخل المناطق المحمية",
+          "التخييم خارج المواقع المخصصة أو دون تصريح",
+          "إشعال النار خارج الأماكن المخصصة",
+          "ترك النفايات",
+          "إزعاج الحياة الفطرية"
+        ],
+        "en": [
+          "Hunting inside protected areas",
+          "Camping outside designated sites or without a permit",
+          "Fires outside designated places",
+          "Littering",
+          "Disturbing wildlife"
+        ]
+      },
+      "permits": {
+        "entry": null,
+        "camping": null,
+        "tours": null,
+        "grazing": null,
+        "ar": "تُحجز مواقع التخييم وتُستخرج التصاريح في المناطق المحمية التابعة للمركز عبر منصة فطري (موسم التخييم 2025-2026 أُعلن في ديسمبر 2025). زيارة محمية الوعول تتطلب ترخيص زيارة عبر منصة فطري. لم تُنشر رسوم.",
+        "en": "Campsites in NCW protected areas are reserved and permits issued through the Fitri platform (2025-26 camping season announced Dec 2025). Visiting the Ibex reserve requires a visit licence via Fitri. No fees found.",
+        "platform": "Fitri (فطري) - NCW",
+        "platform_url": null,
+        "fees": null
+      },
+      "sources": [
+        "https://ncw.gov.sa/en/protected-areas",
+        "https://ncw.gov.sa/en/ecoT",
+        "https://www.spa.gov.sa/en/N2456002",
+        "https://www.spa.gov.sa/en/N2665972",
+        "https://www.ncw.gov.sa/En/Wildlife/ProtectedAreas/Pages/jabal-shada.aspx"
+      ],
+      "confidence": "official",
+      "notes": [
+        "center is a rough estimate by the researcher from published location descriptions (not from an official boundary file); verify against the official boundary/Protected Planet polygon before display.",
+        "not_allowed list is the general NCW/hunting-season rule set (hunting banned in protected areas; camping via designated sites/Fitri), not a site-specific published list.",
+        "Area 77 km2 (newest NCW) vs 68.62 km2 (older NCW) vs about 78 (2024 plan)."
+      ],
+      "type": "ncw"
+    },
+    {
+      "key": "umm-al-qamari-islands",
+      "name_ar": "محمية جزر أم القماري",
+      "name_en": "Umm al-Qamari Islands Protected Area",
+      "region": [
+        "Makkah"
+      ],
+      "center": [
+        19.13,
+        41.08
+      ],
+      "area_km2": 4.03,
+      "includes_former": [],
+      "website": null,
+      "allowed": {
+        "ar": [],
+        "en": []
+      },
+      "not_allowed": {
+        "ar": [
+          "الصيد داخل المناطق المحمية",
+          "التخييم خارج المواقع المخصصة أو دون تصريح",
+          "إشعال النار خارج الأماكن المخصصة",
+          "ترك النفايات",
+          "إزعاج الحياة الفطرية"
+        ],
+        "en": [
+          "Hunting inside protected areas",
+          "Camping outside designated sites or without a permit",
+          "Fires outside designated places",
+          "Littering",
+          "Disturbing wildlife"
+        ]
+      },
+      "permits": {
+        "entry": null,
+        "camping": null,
+        "tours": null,
+        "grazing": null,
+        "ar": "تُحجز مواقع التخييم وتُستخرج التصاريح في المناطق المحمية التابعة للمركز عبر منصة فطري (موسم التخييم 2025-2026 أُعلن في ديسمبر 2025). زيارة محمية الوعول تتطلب ترخيص زيارة عبر منصة فطري. لم تُنشر رسوم.",
+        "en": "Campsites in NCW protected areas are reserved and permits issued through the Fitri platform (2025-26 camping season announced Dec 2025). Visiting the Ibex reserve requires a visit licence via Fitri. No fees found.",
+        "platform": "Fitri (فطري) - NCW",
+        "platform_url": null,
+        "fees": null
+      },
+      "sources": [
+        "https://ncw.gov.sa/en/protected-areas",
+        "https://ncw.gov.sa/en/ecoT",
+        "https://www.spa.gov.sa/en/N2456002",
+        "https://www.spa.gov.sa/en/N2665972",
+        "https://www.protectedplanet.net/555624837",
+        "https://saudipedia.com/en/list-of-natural-reserves-in-saudi-arabia"
+      ],
+      "confidence": "official",
+      "notes": [
+        "center is a rough estimate by the researcher from published location descriptions (not from an official boundary file); verify against the official boundary/Protected Planet polygon before display.",
+        "not_allowed list is the general NCW/hunting-season rule set (hunting banned in protected areas; camping via designated sites/Fitri), not a site-specific published list.",
+        "Two small islands off Al-Qunfudhah; the center is the researcher's estimate and is low-confidence.",
+        "No visitor info found."
+      ],
+      "type": "ncw"
+    },
+    {
+      "key": "jubail-marine",
+      "name_ar": "محمية الجبيل البحرية",
+      "name_en": "Jubail Marine Protected Area",
+      "region": [
+        "Eastern Province"
+      ],
+      "center": [
+        27.15,
+        49.5
+      ],
+      "area_km2": 2410,
+      "includes_former": [],
+      "website": null,
+      "allowed": {
+        "ar": [],
+        "en": []
+      },
+      "not_allowed": {
+        "ar": [
+          "الصيد داخل المناطق المحمية",
+          "التخييم خارج المواقع المخصصة أو دون تصريح",
+          "إشعال النار خارج الأماكن المخصصة",
+          "ترك النفايات",
+          "إزعاج الحياة الفطرية"
+        ],
+        "en": [
+          "Hunting inside protected areas",
+          "Camping outside designated sites or without a permit",
+          "Fires outside designated places",
+          "Littering",
+          "Disturbing wildlife"
+        ]
+      },
+      "permits": {
+        "entry": null,
+        "camping": null,
+        "tours": null,
+        "grazing": null,
+        "ar": "تُحجز مواقع التخييم وتُستخرج التصاريح في المناطق المحمية التابعة للمركز عبر منصة فطري (موسم التخييم 2025-2026 أُعلن في ديسمبر 2025). زيارة محمية الوعول تتطلب ترخيص زيارة عبر منصة فطري. لم تُنشر رسوم.",
+        "en": "Campsites in NCW protected areas are reserved and permits issued through the Fitri platform (2025-26 camping season announced Dec 2025). Visiting the Ibex reserve requires a visit licence via Fitri. No fees found.",
+        "platform": "Fitri (فطري) - NCW",
+        "platform_url": null,
+        "fees": null
+      },
+      "sources": [
+        "https://ncw.gov.sa/en/protected-areas",
+        "https://ncw.gov.sa/en/ecoT",
+        "https://www.spa.gov.sa/en/N2456002",
+        "https://www.spa.gov.sa/en/N2665972",
+        "https://protectedplanet.net/61786"
+      ],
+      "confidence": "official",
+      "notes": [
+        "center is a rough estimate by the researcher from published location descriptions (not from an official boundary file); verify against the official boundary/Protected Planet polygon before display.",
+        "not_allowed list is the general NCW/hunting-season rule set (hunting banned in protected areas; camping via designated sites/Fitri), not a site-specific published list.",
+        "Marine/coastal; little relevance for desert camping."
+      ],
+      "type": "ncw"
+    }
+  ]
+}

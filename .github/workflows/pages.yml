@@ -26,7 +26,7 @@ jobs:
         run: |
           mkdir _site
           cp -r index.html css js .nojekyll _site/
-          mkdir _site/data && cp data/places.json data/lines.json _site/data/
+          mkdir _site/data && cp data/*.json _site/data/
       - uses: actions/upload-pages-artifact@v3
       - id: deployment
         uses: actions/deploy-pages@v4
