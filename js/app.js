@@ -294,7 +294,7 @@
     selected: null,
     userLoc: null,
     userAcc: null,
-    basemap: store.get('basemap', 'satellite'),
+    basemap: store.get('basemapChoice', 'terrain'),
     labels: store.get('labels', false),
   };
   let CATS = [];
@@ -347,12 +347,13 @@
     })],
   };
   let baseLayers = [];
-  function setBasemap(key) {
-    if (!BASEMAPS[key]) key = 'satellite';
+  function setBasemap(key, remember = false) {
+    if (!BASEMAPS[key]) key = 'terrain';
     baseLayers.forEach(l => map.removeLayer(l));
     baseLayers = BASEMAPS[key]();
     baseLayers.forEach(l => l.addTo(map).bringToBack());
-    state.basemap = key; store.set('basemap', key);
+    state.basemap = key;
+    if (remember) store.set('basemapChoice', key);
     document.body.classList.toggle('sat', key === 'satellite');
     els.basemaps.querySelectorAll('.basemap').forEach(b => b.setAttribute('aria-pressed', b.dataset.key === key));
     restyleAreas();
@@ -1280,7 +1281,7 @@
     els.basemaps.innerHTML = ['streets', 'satellite', 'terrain'].map(k =>
       `<button class="basemap" data-key="${k}" aria-pressed="${state.basemap === k}"><span class="thumb ${k}"></span>${esc(t(k))}</button>`).join('');
   }
-  els.basemaps.addEventListener('click', e => { const b = e.target.closest('.basemap'); if (b) setBasemap(b.dataset.key); });
+  els.basemaps.addEventListener('click', e => { const b = e.target.closest('.basemap'); if (b) setBasemap(b.dataset.key, true); });
   els.showLabels.checked = state.labels;
   els.showLabels.addEventListener('change', () => { state.labels = els.showLabels.checked; store.set('labels', state.labels); renderLabels(); if (state.labels && map.getZoom() < 12) map.setZoom(12); });
 
