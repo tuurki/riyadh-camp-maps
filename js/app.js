@@ -39,6 +39,9 @@
       website: 'الموقع الرسمي', sources: 'المصادر', checkOfficial: d => `جُمعت هذه المعلومات من مصادر رسمية وعامة بتاريخ ${d}. الأنظمة تتغير، فتأكد من الجهة الرسمية قبل الزيارة.`,
       secondary: 'مصدر غير رسمي', noInfo: 'لم نجد معلومات منشورة.',
       pointOnly: 'حدود المحمية غير متوفرة، يظهر موقعها فقط.',
+      satTitle: 'صور الأقمار الصناعية', satTrue: 'الصورة الطبيعية', satWater: 'مؤشر المياه (NDWI)',
+      satHint: 'أحدث صورة من القمر الصناعي Sentinel-2 خلال آخر ٢٠ يوماً (غيوم أقل من ٣٠٪). في مؤشر المياه يظهر الماء باللون الأزرق، وتفيد لمعرفة امتلاء الروضات والخباري والسدود بعد المطر. يمكنك هناك قياس المسافات والمساحات ومقارنة تاريخين.',
+      satSource: 'من متصفح كوبرنيكوس التابع لوكالة الفضاء الأوروبية',
       sabilName: 'ماء سبيل', sabilAdded: d => `أُضيف إلى القائمة في ${d}`, sabilSource: 'من قائمة «مارد ماء» العامة على Google Maps',
       sabilNote: 'نقاط ماء يضيفها متطوعون. تأكد من توفر الماء قبل الاعتماد عليه، واحمل احتياطك دائماً.',
       noLocation: 'لم نتمكن من التحقق من موقع هذه المحمية من مصدر مفتوح، لذلك لا تظهر على الخريطة.',
@@ -102,6 +105,9 @@
       website: 'Official website', sources: 'Sources', checkOfficial: d => `Collected from official and public sources on ${d}. Rules change, so confirm with the official authority before you visit.`,
       secondary: 'non-official source', noInfo: 'No published information found.',
       pointOnly: 'The reserve boundary is not available; only its location is shown.',
+      satTitle: 'Satellite images', satTrue: 'True colour', satWater: 'Water index (NDWI)',
+      satHint: 'The latest Sentinel-2 image from the last 20 days (under 30% cloud). In the water index, water shows in blue, which helps you see whether rawdas, khabras and dams filled after rain. There you can also measure distances and areas and compare two dates.',
+      satSource: 'Opens the European Space Agency’s Copernicus Browser',
       sabilName: 'Free water (sabil)', sabilAdded: d => `Added to the list on ${d}`, sabilSource: 'From the public Google Maps list “مارد ماء”',
       sabilNote: 'Water points added by volunteers. Confirm the water is available before relying on it, and always carry a reserve.',
       noLocation: 'We could not verify this reserve’s location from an open source, so it is not shown on the map.',
@@ -841,6 +847,29 @@
   });
 
   // ---------------------------------------------------------------- selection + detail
+  // Copernicus Browser (ESA) link: latest Sentinel-2 L2A image of the last 20 days with < 30% cloud.
+  // Layer IDs come from the browser's DEFAULT-THEME: 1_TRUE_COLOR, 7-NDWI (green/NIR water index).
+  function satLink(lat, lng, layer, zoom) {
+    const to = new Date(), from = new Date(to.getTime() - 20 * 864e5);
+    const day = d => d.toISOString().slice(0, 10);
+    const q = new URLSearchParams({
+      zoom: String(zoom), lat: lat.toFixed(5), lng: lng.toFixed(5), themeId: 'DEFAULT-THEME', datasetId: 'S2_L2A_CDAS',
+      fromTime: `${day(from)}T00:00:00.000Z`, toTime: `${day(to)}T23:59:59.999Z`, layerId: layer,
+      dateMode: 'TIME RANGE', mosaickingOrder: 'mostRecent', cloudCoverage: '30',
+    });
+    return `https://browser.dataspace.copernicus.eu/?${q.toString().replace(/\+/g, '%20')}`;
+  }
+  function satHTML(it) {
+    const zoom = it.kind === 'reserve' ? 10 : it.type === 'city' ? 12 : it.type === 'line' ? 13 : 15;
+    return `<section class="sec" id="satSec"><h3>${esc(t('satTitle'))}</h3>
+      <div class="actions sat-actions">
+        <a class="action" target="_blank" rel="noopener" href="${esc(satLink(it.lat, it.lng, '1_TRUE_COLOR', zoom))}">${svg(UI_ICONS.open)}${esc(t('satTrue'))}</a>
+        <a class="action water" target="_blank" rel="noopener" href="${esc(satLink(it.lat, it.lng, '7-NDWI', zoom))}">${svg(ICONS.water)}${esc(t('satWater'))}</a>
+      </div>
+      <p class="muted small">${esc(t('satHint'))}</p>
+      <p class="muted small">${esc(t('satSource'))}</p></section>`;
+  }
+
   function gmapsLink(lat, lng) { return `https://www.google.com/maps/search/?api=1&query=${lat},${lng}`; }
   function dirLink(lat, lng) { return `https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}`; }
 
@@ -996,6 +1025,7 @@
       </div>` : ''}
       ${it.kind === 'reserve' ? reserveHTML(it) : ''}
       ${waterKind(it) ? `<section class="sec" id="waterSec"><h3>${esc(t('water'))}</h3><div class="sec-body muted">${esc(t('waterLoading'))}</div></section>` : ''}
+      ${showWx ? satHTML(it) : ''}
       ${showWx ? `<section class="sec" id="wxSec"><h3>${esc(t('weather'))}</h3><div class="sec-body muted">${esc(t('wxLoading'))}</div></section>` : ''}`;
     els.detail.hidden = false;
     els.panel.classList.add('has-detail');

@@ -224,6 +224,9 @@ button, input, select { font: inherit; color: inherit; }
 .lvl4 { background: #E8F0FE; }
 
 .chip.extra { font-weight: 600; }
+.sat-actions { margin-top: 0; }
+.action.water { color: #0B57D0; }
+.action.water svg { fill: #1A73E8; }
 
 /* While a place is open, its details replace the result list (closing them brings the list back). */
 .panel.has-detail .toolbar, .panel.has-detail .list, .panel.has-detail .empty, .panel.has-detail .chips { display: none; }

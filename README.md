@@ -16,6 +16,7 @@ An interactive, searchable map of **5,800+ desert locations around Riyadh**: mou
 - **Weather** for any place (Open-Meteo, free and open source, no API key): now, 7-day forecast, past rain, and warnings for rain, strong wind/dust, cold nights and extreme heat
 - **Water status estimate** for valleys, rawdas, khabras and basins: samples terrain height around the spot to find the higher ground that drains into it, combines modelled rain on the site and on that catchment over 3/7/30 days, and warns about flash floods when rain is forecast upstream
 - **Free water points (ماء سبيل)**: 1,101 drinking-water points from the public Google Maps list “مارد ماء”, with their notes (salinity, opening hours) and the date each was added
+- **Satellite images**: every place links to the latest Sentinel-2 image (last 20 days, under 30% cloud) in ESA's Copernicus Browser, in true colour and as a water index (NDWI) where water shows blue
 - **Regions and major cities**: all 13 administrative regions (boundaries, capital, area, how many places of this map fall inside) and 41 major cities
 - **Nature reserves**: 8 royal reserves and 10 National Center for Wildlife protected areas with boundaries, what is allowed / not allowed, permit requirements and official links; any place inside a reserve shows a notice
 - Optional place-name labels on the map
